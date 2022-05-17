@@ -1,0 +1,21 @@
+[package]
+name = "rspaste"
+edition = "2021"
+version = "0.1.0"
+readme = "README.md"
+license = "Apache-2.0"
+license-file = "LICENSE"
+repository = "https://github.com/aidakx/rspaste"
+authors = ["Aidak <aidaksupport@protonmail.com>"]
+homepage = "https://github.com/aidakx/rspaste#readme"
+description = "📄 A simple and fast JSPaste API wrapper for Rust."
+
+[dependencies]
+url = "2.2"
+thiserror = "1.0"
+serde_json = "1.0"
+serde_path_to_error = "0.1"
+ureq = { version = "2.4", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+chrono = { version = "0.4", features = ["serde"] }
+strum = { version = "0.24", features = ["derive"] }
