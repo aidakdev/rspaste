@@ -3,18 +3,15 @@
     <p align="center">
         A simple, fast and fully-typed JSPaste API wrapper for Rust.
         <br />
-        <a href="https://aidak.tk"><strong>aidak.tk »</strong></a>
+        <a href="https://wile.tk"><strong>wile.tk »</strong></a>
     </p>
 </p>
 
 <p align="center">
-    <a href="https://aidak.tk">
-        <img src="https://img.shields.io/badge/Aidak-Official%20Product-8877ff" />
-    </a>
-    <a href="https://discordredirect.discordsafe.com/users/152569284390944768">
+    <a href="https://discordredirect.discordsafe.com/users/311904215272390657">
         <img src="https://img.shields.io/badge/contact-me?logo=discord&logoColor=white&color=5865F2">
     </a>
-    <a href="https://twitter.com/realaidak">
+    <a href="https://twitter.com/wiletki">
         <img src="https://img.shields.io/badge/Twitter-00acee?logo=twitter&logoColor=white" />
     </a>
     <img src="https://img.shields.io/static/v1?label=License&message=Apache%202.0&color=000" />
