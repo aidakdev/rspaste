@@ -11,7 +11,7 @@ pub enum Error {
     Json(#[from] serde_path_to_error::Error<serde_json::Error>),
 }
 
-const BASE_URL: &str = "https://jspaste.ml/documents/";
+const BASE_URL: &str = "https://jspaste.tnfangel.repl.co/documents/";
 
 pub type Result<T> = std::result::Result<T, Error>;
 
