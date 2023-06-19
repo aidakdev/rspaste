@@ -1,13 +1,12 @@
 [package]
 name = "rspaste"
 edition = "2021"
-version = "0.1.2"
+version = "0.1.3"
 readme = "README.md"
 license = "Apache-2.0"
 license-file = "LICENSE"
 repository = "https://github.com/wiletki/rspaste"
 authors = ["wiletki <hello@aidak.xyz>"]
-homepage = "https://github.com/wiletki/rspaste#readme"
 description = "📄 A simple and fast JSPaste API wrapper for Rust."
 
 [dependencies]
