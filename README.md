@@ -1,36 +1,31 @@
-<p align="center">
-    <h1 align="center"><b>rspaste</b></h1>
-    <p align="center">
-        A simple, fast and fully-typed JSPaste API wrapper for Rust.
-        <br />
-        <a href="https://wile.tk"><strong>wile.tk »</strong></a>
-    </p>
-</p>
+<img src="https://file.coffee/u/_TcMC_ybVUnLqBGfIAaeY.png" width="150">
 
-<p align="center">
-    <a href="https://discordredirect.discordsafe.com/users/311904215272390657">
-        <img src="https://img.shields.io/badge/contact-me?logo=discord&logoColor=white&color=5865F2">
-    </a>
-    <a href="https://twitter.com/wiletki">
-        <img src="https://img.shields.io/badge/Twitter-00acee?logo=twitter&logoColor=white" />
-    </a>
-    <img src="https://img.shields.io/static/v1?label=License&message=Apache%202.0&color=000" />
-    <img src="https://img.shields.io/static/v1?label=Stage&message=Stable 0.1&color=2BB4AB" />
-    <a href="https://crates.io/crates/rspaste">
-      <img src="https://img.shields.io/crates/v/rspaste">
-    </a>
-    <br />
-</p>
+A minimal, blazing-fast and fully-typed JSPaste API library for Rust
 
-# Installation
-Put the desired version of the crate into the `dependencies` section of your `Cargo.toml`:
+---
+
+![Crates.io Version](https://img.shields.io/crates/v/rspaste)
+![GitHub License](https://img.shields.io/github/license/aidakdev/rspaste)
+<a href="https://twitter.com/prfzpx">
+    <img src="https://img.shields.io/badge/Twitter-00acee?logo=twitter&logoColor=white" />
+</a>
+
+### Features
+- **Simple.** Perform requests to JSPaste out of the box with simple functions.
+- **Robust.** RSPaste is built in Rust, the world's most loved programming language.
+- **Safe.** RSPaste is completely typesafe, meaning that all data received from the API is typed correctly.
+
+### Install
+
+Put the desired version of the crate into the dependencies section of your Cargo.toml:
+
 ```toml
 [dependencies]
-rspaste = "*"
+rspaste = { version = "0.1.5" }
 ```
 
-# Examples
-First of all, JSPaste API can return errors if a key or secret is invalid, so a good way of handling responses is:
+### Example
+First of all, the JSPaste API may return errors if something goes wrong, so using pattern matching is a good idea:
 ```rs
 match some_doc {
     Ok(d) => todo!(), // ...
@@ -45,7 +40,8 @@ use rspaste;
 
 fn main() {
     let doc = rspaste::api::get("key"); // get document
-    let posted_doc = rspaste::api::post("content"); // post document
+    let created_doc = rspaste::api::post("content"); // post document
     let deleted_doc = rspaste::api::delete("key", "secret"); // delete document
 }
+```
 ```

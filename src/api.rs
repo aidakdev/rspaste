@@ -3,11 +3,11 @@ use crate::types::{GetResponse, PostResponse, DeleteResponse};
 
 #[derive(Debug, Error)]
 pub enum Error {
-    #[error("[rspaste] There was an issue while performing the request.")]
+    #[error("[RSPaste] There was an issue while performing the request.")]
     Ureq(#[from] ureq::Error),
-    #[error("[rspaste] There was an issue while deserializing a response to JSON.")]
+    #[error("[RSPaste] There was an issue while deserializing a response to JSON.")]
     Io(#[from] std::io::Error),
-    #[error("[rspaste] There was an issue while fitting JSON to a strong type.")]
+    #[error("[RSPaste] There was an issue while fitting JSON to a strong type.")]
     Json(#[from] serde_path_to_error::Error<serde_json::Error>),
 }
 
